@@ -10,9 +10,15 @@ import Slide4 from "../../../assets/home/slide4.jpg";
 import Slide5 from "../../../assets/home/slide5.jpg";
 // import required modules
 import { Pagination } from "swiper/modules";
+import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 function Cantegory() {
   return (
-    <>
+    <section>
+      <SectionTitle
+      subHeading={"From 11.00 am to 11.00 pm"}
+      heading={"Order Online"}
+      
+      ></SectionTitle>
       <Swiper
         
         slidesPerView={4}
@@ -55,7 +61,7 @@ function Cantegory() {
           </h3>
         </SwiperSlide>
       </Swiper>
-    </>
+    </section>
   );
 }
 
