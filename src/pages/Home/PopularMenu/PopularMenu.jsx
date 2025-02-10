@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import SectionTitle from "../../../components/SectionTitle/SectionTitle";
 import MenuItem from "../../Shared/MenuItem/MenuItem";
 
@@ -23,6 +23,9 @@ function PopularMenu() {
           <MenuItem key={item._id} item={item}></MenuItem>
         ))}
       </div>
+      <button className="btn btn-outline border border-b-4 mt-2">
+        View full menu
+      </button>
     </section>
   );
 }
